@@ -1,14 +1,15 @@
-def bubble_sort(array)
-    length = array.length
-    for i in 0..length-1
-      for j in 0..length-2
-        if(array[j] >= array[i])
-          temp = array[j]
-          array[j] = array[i]
-          array[i] = temp
-        end
-      end
+ef bubble_sort(array)
+  length = array.length
+  for i in 0..length - 1
+    for j in 0..length-2
+      if(array[j] > array[j+1])
+        temp = array[j]
+        array[j] = array[j+1]
+        array[j+1] = temp
     end
-  print array
+    end
+  length -= 1
   end
-  bubble_sort([4,3,78,2,0,2])
+print array
+  end
+  bubble_sort([2,5,456,363,46,36,43634,634,6346,346,5])
