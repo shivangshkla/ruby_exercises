@@ -1,4 +1,4 @@
-ef bubble_sort(array)
+def bubble_sort(array)
   length = array.length
   for i in 0..length - 1
     for j in 0..length-2
